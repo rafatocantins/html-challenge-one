@@ -116,6 +116,10 @@
 
 /* Main Content */
 
+.logo--mobile {
+    display: none;
+}
+
 .website_area {
     padding: 20px;
 }
@@ -329,6 +333,11 @@ to { transform: translateY(0); }
 }
 
 @media only screen and (max-width: 1140px) {
+
+    .logo--mobile {
+        display: block;
+        max-width: 150px;
+    }
 
     .website_sidebar__nav {
         width: 100%;
