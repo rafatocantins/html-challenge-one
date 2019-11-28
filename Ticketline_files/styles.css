@@ -336,6 +336,10 @@ to { transform: translateY(0); }
 
     .logo--mobile {
         display: block;
+        padding-left: 1em;
+    }
+
+    .logo--mobile img {
         max-width: 150px;
     }
 
