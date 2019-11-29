@@ -91,68 +91,70 @@
       </nav>
     </div>
     <!-- search Mobile -->
-    <div class="search__mobile--bar search__inactive">
-      <li class="website_mob__search">
-        <form id="mob__search" class="mobile__search">
-          <input type="text" name="search" id="search" value="" placeholder="Pesquise por eventos, artistas ou salas" class="input--light">
-            <a onclick="$('#mob__search').submit()">
-              <i class="fas fa-search website_nav__icons--search" style="width: auto"></i>
-            </a>
-        </form>
-      </li>
-    </div>
+    <div class="search_mobile__bar search__inactive">
+        <li class="search_mobile__search">
+          <form id="mob__search" class="mobile__search">
+            <input type="text" name="search" id="search" value="" placeholder="Pesquise por eventos, artistas ou salas" class="input--light">
+              <a onclick="$('#mob__search').submit()">
+                <i class="fas fa-search website_nav__icons--search" style="width: auto"></i>
+              </a>
+          </form>
+        </li>
+      </div>
 
     <!-- Nav mobile -->
 
     <nav class="mobile_menu__nav menu_mobile__inactive">
-      <ul>
-          <li class="medium--bold--uppercase">
-            <a>Inicio</a>
-          </li>
-
-          <li class="medium--bold--uppercase">
-            <a>Categorias</a>
-          </li>
-          <li class="medium--bold--uppercase">
-            <a>Salas</a>
-          </li>
-          <li class="medium--bold--uppercase">
-            <a>Agenda</a>
-          </li>
-          <li class="medium--bold--uppercase">
-            <a>TL Magazine</a>
-          </li>
-          <li class="medium--bold--uppercase mobile_menu__nav--language">
-             <form>
-                <select name="locale" id="locale" onchange="this.form.submit();" class="mobile_select--languages medium--bold--uppercase">
-                  <option class="black" value="en">en</option>
-                  <option class="black" selected="selected" value="pt">pt</option>
-                  <option class="black" value="es">es</option>
-                </select>
-                <span><i class="fas fa-angle-down"></i></span>
-             </form>
+        <ul class="mobile_menu__list">
+            <li class="mobile_menu__links medium--bold--uppercase">
+                <a>Inicio</a>
             </li>
-        </ul>
-    </nav>
+  
+            <li class="mobile_menu__links medium--bold--uppercase">
+              <a>Categorias</a>
+            </li>
+            <li class="mobile_menu__links medium--bold--uppercase">
+              <a>Salas</a>
+            </li>
+            <li class="mobile_menu__links medium--bold--uppercase">
+              <a>Agenda</a>
+            </li>
+            <li class="mobile_menu__links medium--bold--uppercase">
+              <a>TL Magazine</a>
+            </li>
+            <li class="mobile_menu__links medium--bold--uppercase mobile_menu__nav--language">
+               <form>
+                  <select name="locale" id="locale" onchange="this.form.submit();" class="mobile_select--languages medium--bold--uppercase">
+                    <option class="text--black" value="en">en</option>
+                    <option class="text--black" selected="selected" value="pt">pt</option>
+                    <option class="text--black" value="es">es</option>
+                  </select>
+                  <span><i class="fas fa-angle-down"></i></span>
+               </form>
+            </li>
+          </ul>
+      </nav>
 
     <!-- Sidebar Bar mobile -->
     <div class="mobile_sidebar mobile_sidebar__hidden">
-      <div class="mobile_sidebar__button">
-        <span class="button_up"><i class="fas fa-angle-up"></i></span>
-        <span class="button_down button_hidden"><i class="fas fa-angle-down"></i></span>
-      </div>
-      <div class="mobile_sidebar__content">
-        <ul>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-ticket-alt fa-fw"></i></span>Bilhetes</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="far fa-clock fa-fw"></i></span>Fila de espera</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-file-invoice fa-fw"></i></span>Faturas</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Mensagens</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-user fa-fw"></i></span>Dados de Perfil</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-home fa-fw"></i></span>Dados de entrega</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-cog fa-fw"></i></span>Preferencias</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Newsletter</a></li>
-          <li class="mobile_sidebar__nav--item small--bold--uppercase"><a href="#">Terminar Sessão</a></li>
-        </ul>
+      <div class="mobile_sidebar__container">
+        <div class="mobile_sidebar__button">
+            <span class="button_up"><i class="fas fa-angle-up"></i></span>
+            <span class="button_down button_hidden"><i class="fas fa-angle-down"></i></span>
+          </div>
+          <div class="mobile_sidebar__content">
+            <ul class="mobile_sidebar__list">
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-ticket-alt fa-fw"></i></span>Bilhetes</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="far fa-clock fa-fw"></i></span>Fila de espera</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-file-invoice fa-fw"></i></span>Faturas</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Mensagens</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-user fa-fw"></i></span>Dados de Perfil</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-home fa-fw"></i></span>Dados de entrega</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-cog fa-fw"></i></span>Preferencias</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Newsletter</a></li>
+              <li class="mobile_sidebar__links small--bold--uppercase"><a href="#">Terminar Sessão</a></li>
+            </ul>
+          </div>
       </div>
     </div>
 
@@ -171,7 +173,7 @@
         })
 
         $('.search__bar--mobile').click(function(){
-          var $elem = $('.search__mobile--bar')
+          var $elem = $('.search_mobile__bar')
 
           if($elem.hasClass('search__inactive')) {
             console.log('this is true')
@@ -265,355 +267,405 @@
 
     <div class="container">
       <div class="page_container">
-          <a class="logo--mobile"><img src="./Ticketline_files/logo.png"></a>
+          <a class="logo_mobile"><img src="./Ticketline_files/logo.png"></a>
         <!-- Insert code here :) -->
-        <div class="page_row client--area">
-          <div class="column website_sidebar">
+        <div class="page_row client_area">
             <!-- create inner nav -->
-            <div class="website_sidebar__container">
-              <div class="website_sidebar__nav">
-                <ul>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase sidebar-active"><a href="#"><span><i class="fas fa-ticket-alt fa-fw"></i></span>Bilhetes</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="far fa-clock fa-fw"></i></span>Fila de espera</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-file-invoice fa-fw"></i></span>Faturas</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Mensagens</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-user fa-fw"></i></span>Dados de Perfil</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-home fa-fw"></i></span>Dados de entrega</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-cog fa-fw"></i></span>Preferencias</a></li>
-                  <li class="website_sidebar__nav--item tiny--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Newsletter</a></li>
-                </ul>
-  
-                <!-- ending session -->
-                <a class="website_sidebar__user--out">Terminar sessão</a>
-              </div>
-            </div>
-          </div>
-          <div class="column website_area">
-          <!-- create header-->
-            <div class="website_area__header">
-              <h1 class="website_area__header--title text--dark--gray">Bilhetes</h1>
-              <div class="website_area__header--price-table">
-                <h4 class="area_header__price text--dark--gray">20,55€</h4>
-                <p class="area_header__sales text--main--gray">Saldo ticketline</p>
-                <a class="secondary_button tinylong_button">Resgatar Saldo</a>
-              </div>
-            </div>
-            <!--  create card -->
-            <div class="website_area__ticket">
-              <div class="website_area__ticket--top">
-                <div class="area_ticket__date">
-                  <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                  <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                </div>
-                <a class="primary_button tinylong_button">Ver bilhetes</a>
-              </div>
-              <div class="website_area__ticket--content">
-                <div class="ticket_area__column--six column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Evento</span>
-                  </div>
-                  <div class="ticket_area__content--contain-img">
-                    <div class="img_container">
-                      <img src="./Ticketline_files/cirque.jpg">
-                      <div class="img_overlay"></div>
-                    </div>
-                    <div class="ticket_area__content--info">
-                      <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                      <p class="location tiny--bold--uppercase">Altice Arena</p>
-                      <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Zona</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">1º Plateia</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Lugares</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">J6, J7</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--zero column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Total</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">158,00€</span>
-                  </div>
+            <div class="column sidebar">
+              <!-- create inner nav -->
+              <div class="sidebar__container">
+                <div class="sidebar__nav">
+                  <ul class="sidebar__list">
+                    <li class="sidebar__links tiny--bold--uppercase sidebar-active"><a href="#"><span><i class="fas fa-ticket-alt fa-fw"></i></span>Bilhetes</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="far fa-clock fa-fw"></i></span>Fila de espera</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-file-invoice fa-fw"></i></span>Faturas</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Mensagens</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-user fa-fw"></i></span>Dados de Perfil</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-home fa-fw"></i></span>Dados de entrega</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-cog fa-fw"></i></span>Preferencias</a></li>
+                    <li class="sidebar__links tiny--bold--uppercase"><a href="#"><span><i class="fas fa-envelope fa-fw"></i></span>Newsletter</a></li>
+                  </ul>
+    
+                  <!-- ending session -->
+                  <a class="sidebar__user--out">Terminar sessão</a>
                 </div>
               </div>
             </div>
-            <!-- end of card -->
-            <div class="website_area__ticket">
-              <div class="website_area__ticket--top">
-                <div class="area_ticket__date">
-                  <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                  <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                </div>
-                <a class="primary_button tinylong_button">Ver bilhetes</a>
-              </div>
-              <div class="website_area__ticket--content">
-                <div class="ticket_area__column--six column">
+            <div class="column ticket_area">
+                <!-- create header-->
                   <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Evento</span>
-                  </div>
-                  <div class="ticket_area__content--contain-img">
-                    <div class="img_container">
-                      <img src="./Ticketline_files/cirque.jpg">
-                      <div class="img_overlay"></div>
-                    </div>
-                    <div class="ticket_area__content--info">
-                      <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                      <p class="location tiny--bold--uppercase">Altice Arena</p>
-                      <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                    <h1 class="ticket_area__title text--dark--gray">Bilhetes</h1>
+                    <div class="ticket_area__price-table">
+                      <h4 class="ticket_area__price text--dark--gray">20,55€</h4>
+                      <p class="ticket_area__sales text--main--gray">Saldo ticketline</p>
+                      <a class="secondary_button tinylong_button">Resgatar Saldo</a>
                     </div>
                   </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Zona</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">1º Plateia</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Lugares</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">J6, J7</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--zero column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Total</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">158,00€</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <!-- end of second card -->
-              <!-- third card -->
-            <div class="website_area__ticket">
-              <div class="website_area__ticket--top">
-                <div class="area_ticket__date">
-                  <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                  <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                </div>
-                <a class="primary_button tinylong_button">Ver bilhetes</a>
-              </div>
-              <div class="website_area__ticket--content">
-                <div class="ticket_area__column--six column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Evento</span>
-                  </div>
-                  <div class="ticket_area__content--contain-img">
-                    <div class="img_container">
-                      <img src="./Ticketline_files/cirque.jpg">
-                      <div class="img_overlay"></div>
-                    </div>
-                    <div class="ticket_area__content--info">
-                      <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                      <p class="location tiny--bold--uppercase">Altice Arena</p>
-                      <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Zona</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">1º Plateia</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Lugares</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">J6, J7</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--zero column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Total</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">158,00€</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end of third card -->
-            <!-- third card -->
-            <div class="website_area__ticket">
-              <div class="website_area__ticket--top">
-                <div class="area_ticket__date">
-                  <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                  <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                </div>
-                <a class="primary_button tinylong_button">Ver bilhetes</a>
-              </div>
-              <div class="website_area__ticket--content">
-                <div class="ticket_area__column--six column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Evento</span>
-                  </div>
-                  <div class="ticket_area__content--contain-img">
-                    <div class="img_container">
-                      <img src="./Ticketline_files/cirque.jpg">
-                      <div class="img_overlay"></div>
-                    </div>
-                    <div class="ticket_area__content--info">
-                      <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                      <p class="location tiny--bold--uppercase">Altice Arena</p>
-                      <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Zona</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">1º Plateia</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--two column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Lugares</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">J6, J7</span>
-                  </div>
-                </div>
-                <div class="ticket_area__column--zero column">
-                  <div class="ticket_area__header">
-                    <span class="text--gray tiny--bold--uppercase">Total</span>
-                  </div>
-                  <div class="ticket_area__content--no-img">
-                    <span class="ticket_info small--bold">158,00€</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end of third card -->
-            <!-- third card -->
-            <div class="website_area__ticket">
-                <div class="website_area__ticket--top">
-                  <div class="area_ticket__date">
-                    <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                    <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                  </div>
-                  <a class="primary_button tinylong_button">Ver bilhetes</a>
-                </div>
-                <div class="website_area__ticket--content">
-                  <div class="ticket_area__column--six column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Evento</span>
-                    </div>
-                    <div class="ticket_area__content--contain-img">
-                      <div class="img_container">
-                        <img src="./Ticketline_files/cirque.jpg">
-                        <div class="img_overlay"></div>
+                  <!--  create card -->
+                  <div class="ticket">
+                    <div class="ticket__top">
+                      <div class="ticket__top-header">
+                        <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                        <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
                       </div>
-                      <div class="ticket_area__content--info">
-                        <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                        <p class="location tiny--bold--uppercase">Altice Arena</p>
-                        <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                      <a class="primary_button tinylong_button">Ver bilhetes</a>
+                    </div>
+                    <div class="ticket__content">
+                      <div class="ticket__column--six column with--border">
+                        <div class="ticket__header">
+                          <span class="text--gray tiny--bold--uppercase">Evento</span>
+                        </div>
+                        <div class="ticket__content--contain-img">
+                          <div class="img_container">
+                            <img src="./Ticketline_files/cirque.jpg">
+                            <div class="img_overlay"></div>
+                          </div>
+                          <div class="ticket__main-info">
+                            <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                            <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                            <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ticket__column--two column with--border">
+                        <div class="ticket__header">
+                          <span class="text--gray tiny--bold--uppercase">Zona</span>
+                        </div>
+                        <div class="ticket__content--no-img">
+                          <span class="ticket__info small--bold">1º Plateia</span>
+                        </div>
+                      </div>
+                      <div class="ticket__column--two column with--border">
+                        <div class="ticket__header">
+                          <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                        </div>
+                        <div class="ticket__content--no-img">
+                          <span class="ticket__info small--bold">J6, J7</span>
+                        </div>
+                      </div>
+                      <div class="ticket__column--zero column">
+                        <div class="ticket__header">
+                          <span class="text--gray tiny--bold--uppercase">Total</span>
+                        </div>
+                        <div class="ticket__content--no-img">
+                          <span class="ticket__info small--bold">158,00€</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="ticket_area__column--two column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Zona</span>
-                    </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">1º Plateia</span>
-                    </div>
-                  </div>
-                  <div class="ticket_area__column--two column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Lugares</span>
-                    </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">J6, J7</span>
-                    </div>
-                  </div>
-                  <div class="ticket_area__column--zero column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Total</span>
-                    </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">158,00€</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end of third card -->
-              <!-- third card -->
-              <div class="website_area__ticket">
-                <div class="website_area__ticket--top">
-                  <div class="area_ticket__date">
-                    <span class="tiny--bold--uppercase text--gray">Data de compra</span>
-                    <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
-                  </div>
-                  <a class="primary_button tinylong_button">Ver bilhetes</a>
-                </div>
-                <div class="website_area__ticket--content">
-                  <div class="ticket_area__column--six column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Evento</span>
-                    </div>
-                    <div class="ticket_area__content--contain-img">
-                      <div class="img_container">
-                        <img src="./Ticketline_files/cirque.jpg">
-                        <div class="img_overlay"></div>
+                  <!-- end of card -->
+                  <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
                       </div>
-                      <div class="ticket_area__content--info">
-                        <span class="datetime small--bold">03 Jan 2019 | 18h00</span>
-                        <p class="location tiny--bold--uppercase">Altice Arena</p>
-                        <h4 class="event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="ticket_area__column--two column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Zona</span>
+                    <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
+                      </div>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">1º Plateia</span>
+                    <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
+                      </div>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="ticket_area__column--two column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                    <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
+                      </div>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">J6, J7</span>
+                    <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
+                      </div>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="ticket_area__column--zero column">
-                    <div class="ticket_area__header">
-                      <span class="text--gray tiny--bold--uppercase">Total</span>
+                    <!--  create card -->
+                  <div class="ticket">
+                      <div class="ticket__top">
+                        <div class="ticket__top-header">
+                          <span class="tiny--bold--uppercase text--gray">Data de compra</span>
+                          <p class="small--bold--uppercase text--dark--gray sm--mb--1">20 Ago 2018</p>
+                        </div>
+                        <a class="primary_button tinylong_button">Ver bilhetes</a>
+                      </div>
+                      <div class="ticket__content">
+                        <div class="ticket__column--six column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Evento</span>
+                          </div>
+                          <div class="ticket__content--contain-img">
+                            <div class="img_container">
+                              <img src="./Ticketline_files/cirque.jpg">
+                              <div class="img_overlay"></div>
+                            </div>
+                            <div class="ticket__main-info">
+                              <span class="ticket__datetime small--bold">03 Jan 2019 | 18h00</span>
+                              <p class="ticket__location tiny--bold--uppercase">Altice Arena</p>
+                              <h4 class="ticket__event-name medium--bold">Cirque du Soleil - Ovo</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Zona</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">1º Plateia</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--two column with--border">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Lugares</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">J6, J7</span>
+                          </div>
+                        </div>
+                        <div class="ticket__column--zero column">
+                          <div class="ticket__header">
+                            <span class="text--gray tiny--bold--uppercase">Total</span>
+                          </div>
+                          <div class="ticket__content--no-img">
+                            <span class="ticket__info small--bold">158,00€</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="ticket_area__content--no-img">
-                      <span class="ticket_info small--bold">158,00€</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <!-- end of third card -->
             <script>
               // get structure for writing plugin
